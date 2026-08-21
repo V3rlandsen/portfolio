@@ -1,308 +1,667 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#documents">Documents</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-        <div class="hero">
-            <h1>Vebjørn Erlandsen</h1>
-            <img src="images/selfie.jpg" alt="Portrait of Vebjørn Erlandsen" class="selfie-image">
-            <p>Cybernetics and Robotics (M.Sc.) / Automation and Electronics Design (B.Sc.) Student</p>
-            <a href="#projects" class="button">See My Work</a>
-        </div>
+      <div class="hero">
+        <h1>Vebjørn Erlandsen</h1>
+        <img
+          src="images/selfie.jpg"
+          alt="Portrait of Vebjørn Erlandsen"
+          class="selfie-image"
+        />
+        <p>
+          Cybernetics and Robotics (M.Sc.) / Automation and Electronics Design
+          (B.Sc.) Student
+        </p>
+        <a href="#projects" class="button">See My Work</a>
+      </div>
     </header>
 
     <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a Master's student in Cybernetics and Robotics at NTNU Trondheim
+          with a background in Automation and Electronics Design. My experience
+          spans robotics, embedded systems, industrial automation, electronics
+          development, and control engineering through both academic and
+          industry projects.
+        </p>
+      </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a Master's student in Cybernetics and Robotics at NTNU Trondheim with a
-                background in Automation and Electronics Design. My experience spans robotics,
-                embedded systems, industrial automation, electronics development, and control
-                engineering through both academic and industry projects.
-            </p>
-        </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>MATLAB / Simulink</li>
+          <li>ESP32 / STM32</li>
+          <li>FreeCAD & 3D Printing</li>
+          <li>Electronics Development & System Design</li>
+          <li>Control Systems & PID Control</li>
+          <li>PLC Programming & Industrial Automation</li>
+          <li>Signal Processing (FIR / IIR Filtering)</li>
+          <li>Numerical Methods</li>
+          <li>Robotics & Automation</li>
+          <li>Embedded Systems</li>
+          <li>Computer Architecture</li>
+          <li>Applied Mathematics</li>
+          <li>Probability & Statistics</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+      <section id="projects">
+        <h2>Projects</h2>
 
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>MATLAB / Simulink</li>
-                <li>Electronics Development & System Design</li>
-                <li>Control Systems & PID Control</li>
-                <li>PLC Programming & Industrial Automation</li>
-                <li>Signal Processing (FIR / IIR Filtering)</li>
-                <li>Numerical Methods</li>
-                <li>Robotics & Automation</li>
-                <li>Embedded Systems</li>
-                <li>Computer Architecture</li>
-                <li>Applied Mathematics</li>
-                <li>Probability & Statistics</li>
-                <li>Project Management</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-
-            <h2>Projects</h2>
-
-            <article class="card">
-                <h3>B.Sc Simulation-Based Testing Framework for Embedded Systems Using MQTT and Cross-Compiled Code</h3>
-                <div class="media-row">
-                    <div class="media-card">
-                        <img src="images/IPS_kort.jpg" class="project-image" alt="Project image"
-                            data-full="images/IPS_kort.jpg">
-                        <span class="media-label">Overview</span>
-                    </div>
-                    <div class="media-card">
-                        <embed src="images/Framework_overviewHorizontal.png" class="project-image"
-                            type="application/pdf" data-full="images/Framework_overviewHorizontal.png" />
-                        <span class="media-label">System Diagram</span>
-                    </div>
-                </div>
-                <div class="media-row">
-                    <div class="media-card">
-                        <img src="images/hardware_vs_simulator_3000.png" class="project-image" alt="Project image"
-                            data-full="images/hardware_vs_simulator_3000.png">
-                        <span class="media-label">Hardware vs Simulator</span>
-                    </div>
-                    <div class="media-card">
-                        <img src="images/Latency_comparison.png" class="project-image" alt="Project image"
-                            data-full="images/Latency_comparison.png">
-                        <span class="media-label">Latency Comparison</span>
-                    </div>
-                </div>
-                <p><em>Bachelor's Thesis — University of Stavanger in collaboration with ABB Bryne (2026)</em></p>
-
-                <p>
-                    Designed and implemented a simulation framework enabling ABB's Virtual IPS
-                    controller to execute closed-loop tests against a virtual industrial process
-                    instead of physical hardware. The framework integrates a C++ controller,
-                    C# middleware, MQTT communication, Windows shared memory, and a Python
-                    process simulator.
-                </p>
-
-                <ul>
-                    <li>Replaced FPGA hardware I/O with Windows shared memory without modifying controller software.
-                    </li>
-                    <li>Developed a C# MQTT proxy using MQTTnet.</li>
-                    <li>Created a Python RLC process simulator using paho-mqtt.</li>
-                    <li>Achieved 1.24 ms average MQTT round-trip latency.</li>
-                    <li>Validated simulation with only 0.29 V mean absolute error over ±10 V.</li>
-                    <li>Implemented automatic broker reconnection and fault tolerance.</li>
-                </ul>
-
-                <p>
-                    <a href="documents/bachelor_thesis.pdf" target="_blank">
-                        Read the full thesis (PDF)
-                    </a>
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>LEGO Mindstorms Robotics & Control Systems</h3>
-                <div class="media-row">
-                    <div class="media-card">
-                        <embed src="images/PID-kjoretoy.png" class="project-image" type="application/pdf"
-                            data-full="images/PID-kjoretoy.png" />
-                        <span class="media-label">PID Control</span>
-                    </div>
-                    <div class="media-card">
-                        <embed src="images/IKKESTYREu0.png" class="project-image" type="application/pdf"
-                            data-full="images/IKKESTYREu0.png" />
-                        <span class="media-label">Control Output</span>
-                    </div>
-                </div>
-                <div class="media-row">
-                    <div class="media-card">
-                        <embed src="images/Figur_8_3_4.png" class="project-image" type="application/pdf"
-                            data-full="images/Figur_8_3_4.png" />
-                        <span class="media-label">Trajectory</span>
-                    </div>
-                </div>
-                <p><em>ELE130 – Applied Mathematics and Physics in Robot Programming, University of Stavanger
-                        (2024)</em></p>
-
-                <p>
-                    Designed and programmed a LEGO Mindstorms robot in MATLAB to implement
-                    numerical methods, signal processing, feedback control, and autonomous
-                    navigation. The project combined mathematical theory with practical robotics
-                    through laboratory experiments and autonomous robot programming.
-                </p>
-
-                <ul>
-                    <li>Implemented numerical integration and differentiation algorithms in MATLAB.</li>
-                    <li>Designed FIR and IIR digital filters for sensor signal processing.</li>
-                    <li>Developed and tuned P, PI, and PID motor controllers.</li>
-                    <li>Built an autonomous line-following robot using LEGO EV3 sensors.</li>
-                    <li>Validated numerical algorithms against analytical mathematical models.</li>
-                </ul>
-
-                <p>
-                    <a href="documents/ELE130_Lego_Prosjekt.pdf" target="_blank">
-                        Read the project report (PDF)
-                    </a>
-                </p>
-            </article>
-
-            <article class="card">
-                <h3>Electronics Development & System Construction (ELE340)</h3>
-                <div class="media-row">
-                    <div class="media-card">
-                        <img src="images/GUI_2.png" class="project-image" alt="Project image"
-                            data-full="images/GUI_2.png">
-                        <span class="media-label">GUI</span>
-                    </div>
-                    <div class="media-card">
-                        <img src="images/ELE340_blokkdiagram.png" class="project-image" alt="Project image"
-                            data-full="images/ELE340_blokkdiagram.png">
-                        <span class="media-label">Block Diagram</span>
-                    </div>
-                </div>
-                <div class="media-row">
-                    <div class="media-card">
-                        <img src="images/ELE340_GRNS_sideview.png" class="project-image" alt="Project image"
-                            data-full="images/ELE340_GRNS_sideview.png">
-                        <span class="media-label">Side View</span>
-                    </div>
-                    <div class="media-card">
-                        <img src="images/PCB.jpeg" class="project-image" alt="Project image"
-                            data-full="images/PCB.jpeg">
-                        <span class="media-label">PCB</span>
-                    </div>
-                </div>
-                <p>
-                    Designed, built, and tested electronic circuits as part of a project-based
-                    electronics course focusing on practical hardware development,
-                    measurement techniques, and technical documentation.
-                </p>
-
-                <p>
-                    <a href="documents/ele340_sluttrapport.pdf" target="_blank">
-                        Read the project report (PDF)
-                    </a>
-                </p>
-            </article>
-            <article class="card">
-                <h3>Vision-Guided Pick-and-Place with ABB Industrial Robot</h3>
-                <div class="media-row">
-                    <div class="media-card">
-                        <img src="images/norbert.png" class="project-image" alt="Project image"
-                            data-full="images/norbert.png">
-                        <span class="media-label">Robot Setup</span>
-                    </div>
-                    <div class="media-card">
-                        <img src="images/puck.png" class="project-image" alt="Project image"
-                            data-full="images/puck.png">
-                        <span class="media-label">Pick Object</span>
-                    </div>
-                </div>
-                <p><em>ELE610 – Image Acquisition & Industrial Robotics, University of Stavanger (2023)</em></p>
-
-                <p>
-                    Developed a vision-guided pick-and-place system using an ABB industrial robot,
-                    Python, OpenCV, and RAPID. QR-coded pucks were detected with computer vision,
-                    transformed into the robot's coordinate system, and transmitted via ABB Robot
-                    Web Services (RWS) for autonomous pick-and-place operations.
-                </p>
-
-                <ul>
-                    <li>Implemented QR-code detection and localization using OpenCV.</li>
-                    <li>Converted image coordinates into ABB robot work-object coordinates.</li>
-                    <li>Integrated Python and RAPID through ABB Robot Web Services (RWS).</li>
-                    <li>Developed automated pick-and-place routines with real-time robot communication.</li>
-                    <li>Addressed practical challenges including camera calibration, timing, and coordinate offsets.
-                    </li>
-                </ul>
-            </article>
-
-        </section>
-
-        <section id="documents">
-
-            <h2>Documents</h2>
-
-            <ul>
-                <li class="card">
-                    <a href="documents/vebjorn_erlandsen_cv.pdf" target="_blank">
-                        CV
-                    </a>
-                </li>
-
-                <li class="card">
-                    <a href="documents/vebjorn_erlandsen_transcript.pdf" target="_blank">
-                        Transcript
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <div class="contact-grid">
-
-                <p class="card">
-                    <a class="contact-link" href="mailto:vebjorn.erla@email.com">
-                        Email Me
-                    </a><br>
-                    vebjorn.erla@email.com
-                </p>
-
-                <p class="card">
-                    <a class="contact-link" href="https://www.linkedin.com/in/vebjørn-erlandsen-89436138b"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
-                </p>
-
-                <p class="card">
-                    <a class="contact-link" href="https://github.com/V3rlandsen" target="_blank"
-                        rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                </p>
-
-                <p class="card">
-                    Phone:<br>
-                    +47 96047010
-                </p>
-
+        <article class="card">
+          <h3>
+            B.Sc Simulation-Based Testing Framework for Embedded Systems Using
+            MQTT and Cross-Compiled Code
+          </h3>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/IPS_kort.jpg"
+                class="project-image"
+                alt="Project image"
+                data-full="images/IPS_kort.jpg"
+              />
+              <span class="media-label">Overview</span>
             </div>
+            <div class="media-card">
+              <embed
+                src="images/Framework_overviewHorizontal.png"
+                class="project-image"
+                type="application/pdf"
+                data-full="images/Framework_overviewHorizontal.png"
+              />
+              <span class="media-label">System Diagram</span>
+            </div>
+          </div>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/hardware_vs_simulator_3000.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/hardware_vs_simulator_3000.png"
+              />
+              <span class="media-label">Hardware vs Simulator</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/Latency_comparison.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/Latency_comparison.png"
+              />
+              <span class="media-label">Latency Comparison</span>
+            </div>
+          </div>
+          <p>
+            <em
+              >Bachelor's Thesis — University of Stavanger in collaboration with
+              ABB Bryne (2026)</em
+            >
+          </p>
 
-        </section>
+          <p>
+            Designed and implemented a simulation framework enabling ABB's
+            Virtual IPS controller to execute closed-loop tests against a
+            virtual industrial process instead of physical hardware. The
+            framework integrates a C++ controller, C# middleware, MQTT
+            communication, Windows shared memory, and a Python process
+            simulator.
+          </p>
 
+          <ul>
+            <li>
+              Replaced FPGA hardware I/O with Windows shared memory without
+              modifying controller software.
+            </li>
+            <li>Developed a C# MQTT proxy using MQTTnet.</li>
+            <li>Created a Python RLC process simulator using paho-mqtt.</li>
+            <li>Achieved 1.24 ms average MQTT round-trip latency.</li>
+            <li>
+              Validated simulation with only 0.29 V mean absolute error over ±10
+              V.
+            </li>
+            <li>
+              Implemented automatic broker reconnection and fault tolerance.
+            </li>
+          </ul>
+
+          <p>
+            <a href="documents/bachelor_thesis.pdf" target="_blank">
+              Read the full thesis (PDF)
+            </a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>LEGO Mindstorms Robotics & Control Systems</h3>
+          <div class="media-row">
+            <div class="media-card">
+              <embed
+                src="images/PID-kjoretoy.png"
+                class="project-image"
+                type="application/pdf"
+                data-full="images/PID-kjoretoy.png"
+              />
+              <span class="media-label">PID Control</span>
+            </div>
+            <div class="media-card">
+              <embed
+                src="images/IKKESTYREu0.png"
+                class="project-image"
+                type="application/pdf"
+                data-full="images/IKKESTYREu0.png"
+              />
+              <span class="media-label">Control Output</span>
+            </div>
+          </div>
+          <div class="media-row">
+            <div class="media-card">
+              <embed
+                src="images/Figur_8_3_4.png"
+                class="project-image"
+                type="application/pdf"
+                data-full="images/Figur_8_3_4.png"
+              />
+              <span class="media-label">Trajectory</span>
+            </div>
+          </div>
+          <p>
+            <em
+              >ELE130 – Applied Mathematics and Physics in Robot Programming,
+              University of Stavanger (2024)</em
+            >
+          </p>
+
+          <p>
+            Designed and programmed a LEGO Mindstorms robot in MATLAB to
+            implement numerical methods, signal processing, feedback control,
+            and autonomous navigation. The project combined mathematical theory
+            with practical robotics through laboratory experiments and
+            autonomous robot programming.
+          </p>
+
+          <ul>
+            <li>
+              Implemented numerical integration and differentiation algorithms
+              in MATLAB.
+            </li>
+            <li>
+              Designed FIR and IIR digital filters for sensor signal processing.
+            </li>
+            <li>Developed and tuned P, PI, and PID motor controllers.</li>
+            <li>
+              Built an autonomous line-following robot using LEGO EV3 sensors.
+            </li>
+            <li>
+              Validated numerical algorithms against analytical mathematical
+              models.
+            </li>
+          </ul>
+
+          <p>
+            <a href="documents/ELE130_Lego_Prosjekt.pdf" target="_blank">
+              Read the project report (PDF)
+            </a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Electronics Development & System Construction (ELE340)</h3>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/GUI_2.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/GUI_2.png"
+              />
+              <span class="media-label">GUI</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/ELE340_blokkdiagram.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/ELE340_blokkdiagram.png"
+              />
+              <span class="media-label">Block Diagram</span>
+            </div>
+          </div>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/ELE340_GRNS_sideview.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/ELE340_GRNS_sideview.png"
+              />
+              <span class="media-label">Side View</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/PCB.jpeg"
+                class="project-image"
+                alt="Project image"
+                data-full="images/PCB.jpeg"
+              />
+              <span class="media-label">PCB</span>
+            </div>
+          </div>
+          <p>
+            Designed, built, and tested electronic circuits as part of a
+            project-based electronics course focusing on practical hardware
+            development, measurement techniques, and technical documentation.
+          </p>
+
+          <p>
+            <a href="documents/ele340_sluttrapport.pdf" target="_blank">
+              Read the project report (PDF)
+            </a>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Vision-Guided Pick-and-Place with ABB Industrial Robot</h3>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/norbert.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/norbert.png"
+              />
+              <span class="media-label">Robot Setup</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/puck.png"
+                class="project-image"
+                alt="Project image"
+                data-full="images/puck.png"
+              />
+              <span class="media-label">Pick Object</span>
+            </div>
+          </div>
+          <p>
+            <em
+              >ELE610 – Image Acquisition & Industrial Robotics, University of
+              Stavanger (2023)</em
+            >
+          </p>
+
+          <p>
+            Developed a vision-guided pick-and-place system using an ABB
+            industrial robot, Python, OpenCV, and RAPID. QR-coded pucks were
+            detected with computer vision, transformed into the robot's
+            coordinate system, and transmitted via ABB Robot Web Services (RWS)
+            for autonomous pick-and-place operations.
+          </p>
+
+          <ul>
+            <li>
+              Implemented QR-code detection and localization using OpenCV.
+            </li>
+            <li>
+              Converted image coordinates into ABB robot work-object
+              coordinates.
+            </li>
+            <li>
+              Integrated Python and RAPID through ABB Robot Web Services (RWS).
+            </li>
+            <li>
+              Developed automated pick-and-place routines with real-time robot
+              communication.
+            </li>
+            <li>
+              Addressed practical challenges including camera calibration,
+              timing, and coordinate offsets.
+            </li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>ESP32 4-Wire Fan Controller with Live RPM & Custom OLED GUI</h3>
+
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/fan_control_gui.jpg"
+                class="project-image"
+                alt="OLED GUI"
+                data-full="images/fan_control_gui.jpg"
+              />
+              <span class="media-label">OLED GUI</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/Fan_control_overview.jpg"
+                class="project-image"
+                alt="Hardware setup"
+                data-full="images/Fan_control_overview.jpg"
+              />
+              <span class="media-label">Hardware Overview</span>
+            </div>
+          </div>
+          <div class="media-row">
+            <div class="media-card">
+              <img
+                src="images/Fan_control_sch.png"
+                class="project-image"
+                alt="Schematic"
+                data-full="images/Fan_control_sch.png"
+              />
+              <span class="media-label">Schematic</span>
+            </div>
+            <div class="media-card">
+              <img
+                src="images/Fan_control_browser_UI.png"
+                class="project-image"
+                alt="Browser UI"
+                data-full="images/Fan_control_browser_UI.png"
+              />
+              <span class="media-label">Web Interface</span>
+            </div>
+          </div>
+
+          <p><em>Personal Project – ESP32-S3 / ESP-IDF 2026</em></p>
+
+          <p>
+            Designed and implemented a complete closed-loop speed controller for
+            a standard 4-wire PC fan. The system combines PWM drive, real-time
+            tachometer feedback, a custom OLED user interface, local
+            rotary-encoder control and a web-based remote interface with live
+            RPM streaming.
+          </p>
+
+          <ul>
+            <li>
+              PWM speed control of a 12 V 4-wire fan using an IRLZ44N MOSFET
+              (low-side switching).
+            </li>
+            <li>
+              Hardware tachometer reading with ESP32 pulse counter peripheral
+              and exponential filtering.
+            </li>
+            <li>
+              Custom SSD1306 OLED driver featuring an animated fan icon,
+              duty-cycle bar, live RPM and IP address.
+            </li>
+            <li>
+              Rotary encoder for local duty adjustment and power on/off
+              toggle.
+            </li>
+            <li>
+              Wi-Fi web interface (HTTP + WebSocket) for remote control and
+              real-time RPM updates.
+            </li>
+            <li>
+              Thread-safe shared state protected by FreeRTOS mutex for
+              concurrent access from encoder, web server and main loop.
+            </li>
+            <li>
+              Regulated power supply.
+            </li>
+          </ul>
+
+          <p>
+            <a
+              href="https://github.com/V3rlandsen/ESP32"
+              target="_blank"
+            >
+              View source on GitHub
+            </a>
+          </p>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="timeline">
+          <!-- Bachelor -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>B.Sc. Automation and Electronics Design</h3>
+              <p class="timeline-meta">University of Stavanger · 2023 – 2026</p>
+
+              <div class="course-groups">
+                <div class="course-group">
+                  <h4>2023 Autumn</h4>
+                  <ul>
+                    <li>
+                      DAT120 – Programming Fundamentals
+                      <span class="grade">B</span>
+                    </li>
+                    <li>
+                      FYS102 – Physics for Data/Electrical Engineering
+                      <span class="grade">C</span>
+                    </li>
+                    <li>
+                      KJE101 – Introductory Chemistry
+                      <span class="grade">B</span>
+                    </li>
+                    <li>
+                      MAT100 – Mathematical Methods 1
+                      <span class="grade">A</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2024 Spring</h4>
+                  <ul>
+                    <li>
+                      ELE100 – Elektroteknikk 1 <span class="grade">A</span>
+                    </li>
+                    <li>
+                      ELE130 – Anvendt matematikk og fysikk i robotprogrammering
+                      <span class="grade">C</span>
+                    </li>
+                    <li>
+                      MAT200 – Matematiske metoder 2
+                      <span class="grade">A</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2024 Autumn</h4>
+                  <ul>
+                    <li>
+                      ELE200 – Electrical Engineering 2
+                      <span class="grade">A</span>
+                    </li>
+                    <li>
+                      ELE210 – Computer Architecture
+                      <span class="grade">A</span>
+                    </li>
+                    <li>
+                      ELE310 – Control Engineering <span class="grade">B</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2025 Spring</h4>
+                  <ul>
+                    <li>
+                      ELE300 – Signals and Systems <span class="grade">B</span>
+                    </li>
+                    <li>
+                      ELE320 – Control Engineering <span class="grade">B</span>
+                    </li>
+                    <li>
+                      STA100 – Probability and Statistics 1
+                      <span class="grade">A</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2025 Autumn</h4>
+                  <ul>
+                    <li>
+                      ELE340 – Electronics and Embedded Design
+                      <span class="grade">B</span>
+                    </li>
+                    <li>
+                      ELE610 – Practical Robotics
+                      <span class="grade">Bestått</span>
+                    </li>
+                    <li>
+                      MAT300 – Vector Analysis <span class="grade">A</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2026 Spring</h4>
+                  <ul>
+                    <li>
+                      ELEBAC – Bachelor’s Thesis in Electrotechnology<br />
+
+                      <span class="grade">A</span>
+                    </li>
+                    <li>
+                      ING200 – Engineering Systems Course – Technology
+                      Management <span class="grade">B</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Master -->
+          <div class="timeline-item future">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>M.Sc. Cybernetics and Robotics</h3>
+              <p class="timeline-meta">
+                NTNU Trondheim · 2026 – 2028 · Specialization: Robots and Vessel
+                Control
+              </p>
+
+              <div class="course-groups">
+                <div class="course-group">
+                  <h4>2026 Autumn (planned)</h4>
+                  <ul>
+                    <li>
+                      HMS0009 – Health, Safety and Environment (HSE) course for
+                      1st year students
+                    </li>
+                    <li>TDT4120 – Algorithms and Data Structures</li>
+                    <li>TTK4225 – System Theory, Introduction</li>
+                    <li>TTK4115 – Linear System Theory</li>
+                    <li>TTK4150 – Nonlinear Control Systems</li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2027 Spring (planned)</h4>
+                  <ul>
+                    <li>TTK4135 – Optimization and Control</li>
+                    <li>TTK4130 – Modeling and Simulation</li>
+                    <li>elective subjects</li>
+                  </ul>
+                </div>
+                <div class="course-group">
+                  <h4>2027 Autumn – 2028 Spring</h4>
+                  <ul>
+                    <li>Specialization courses + Master’s thesis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="documents">
+        <h2>Documents</h2>
+
+        <ul>
+          <li class="card">
+            <a href="documents/cv_en.pdf" target="_blank">
+              CV
+            </a>
+          </li>
+
+          <li class="card">
+            <a
+              href="documents/vebjorn_erlandsen_transcript.pdf"
+              target="_blank"
+            >
+              Transcript(UIS)
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+          <p class="card">
+            <a class="contact-link" href="mailto:vebjorn.erla@email.com">
+              Email Me </a
+            ><br />
+            vebjorn.erla@email.com
+          </p>
+
+          <p class="card">
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/vebjørn-erlandsen-89436138b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+
+          <p class="card">
+            <a
+              class="contact-link"
+              href="https://github.com/V3rlandsen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
+
+          <p class="card">
+            Phone:<br />
+            +47 96047010
+          </p>
+        </div>
+      </section>
     </main>
 
     <div class="lightbox" id="lightbox">
-        <div class="lightbox-content" id="lightboxContent"></div>
+      <div class="lightbox-content" id="lightboxContent"></div>
     </div>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -192,3 +192,97 @@ iframe.project-image {
         padding: 1rem;
     }
 }
+/* ===== Education Timeline (simple, matches existing theme) ===== */
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 1.5rem 0;
+    padding-left: 1.8rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(143, 211, 255, 0.4);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -1.8rem;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8fd3ff;
+    border: 2px solid #0f2027;
+}
+
+.timeline-item.future .timeline-marker {
+    background: #94a3b8;
+}
+
+.timeline-content {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 1.2rem 1.4rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.timeline-meta {
+    color: #a8c0d0;
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0.8rem;
+}
+
+.timeline-grade {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #dce8f0;
+}
+
+.course-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+}
+
+.course-group h4 {
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+    color: #8fd3ff;
+}
+
+.course-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.course-group li {
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    color: #e8f0f5;
+}
+
+.grade {
+    font-weight: 600;
+    color: #7ee787;
+    white-space: nowrap;
+}
+
+.timeline-item.future .timeline-content {
+    border-style: dashed;
+    opacity: 0.9;
+}
