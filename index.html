@@ -21,7 +21,7 @@
       <div class="hero">
         <h1>Vebjørn Erlandsen</h1>
         <img
-          src="images/selfie.jpg"
+          src="images/sevlportrett.png"
           alt="Portrait of Vebjørn Erlandsen"
           class="selfie-image"
         />
@@ -36,17 +36,17 @@
     <main>
       <section id="about">
         <h2>About Me</h2>
-    <p>
-    I am a Master's student in Cybernetics and Robotics at NTNU Trondheim
-    with a background in Automation and Electronics Design. My experience
-    spans robotics, embedded systems, industrial automation, electronics
-    development, and control engineering through both academic and
-    industry projects. Outside of coursework, I enjoy exploring electronics
-    on my own — prototyping circuits on breadboards, soldering, and analyzing
-    hardware with tools like a logic analyzer to understand protocols, along
-    with 3D-design and 3D-printing.
-    It's where I get to experiment freely and learn by doing.
-    </p>
+        <p>
+          I am a Master's student in Cybernetics and Robotics at NTNU Trondheim
+          with a background in Automation and Electronics Design. My experience
+          spans robotics, embedded systems, industrial automation, electronics
+          development, and control engineering through both academic and
+          industry projects. Outside of coursework, I enjoy exploring
+          electronics on my own — prototyping circuits on breadboards,
+          soldering, and analyzing hardware with tools like a logic analyzer to
+          understand protocols, along with 3D-design and 3D-printing. It's where
+          I get to experiment freely and learn by doing.
+        </p>
       </section>
 
       <section id="skills">
@@ -415,8 +415,7 @@
               duty-cycle bar, live RPM and IP address.
             </li>
             <li>
-              Rotary encoder for local duty adjustment and power on/off
-              toggle.
+              Rotary encoder for local duty adjustment and power on/off toggle.
             </li>
             <li>
               Wi-Fi web interface (HTTP + WebSocket) for remote control and
@@ -426,18 +425,26 @@
               Thread-safe shared state protected by FreeRTOS mutex for
               concurrent access from encoder, web server and main loop.
             </li>
-            <li>
-              Regulated power supply.
-            </li>
+            <li>Regulated power supply.</li>
           </ul>
 
           <p>
-            <a
-              href="https://github.com/V3rlandsen/ESP32"
-              target="_blank"
-            >
+            <a href="https://github.com/V3rlandsen/ESP32" target="_blank">
               View source on GitHub
             </a>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Self-Hosted Cloud – Ubuntu Server, Nextcloud & Tailscale</h3>
+
+          <p><em>Personal Project</em></p>
+
+          <p>
+            Set up and maintain a private cloud on a self-hosted Ubuntu Server.
+            Nextcloud handles file storage, synchronization, and sharing across
+            devices, while Tailscale (a WireGuard-based VPN mesh network)
+            provides secure remote access to the services without opening any
+            ports to the internet.
           </p>
         </article>
       </section>
@@ -605,9 +612,7 @@
 
         <ul>
           <li class="card">
-            <a href="documents/cv_en.pdf" target="_blank">
-              CV
-            </a>
+            <a href="documents/cv_en.pdf" target="_blank"> CV </a>
           </li>
 
           <li class="card">
